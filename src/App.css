@@ -16,12 +16,12 @@ body {
 
 .glow {
   position: fixed;
- 
+
   border-radius: 50%; /* Make it circular */
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: top 0.1s, left 0.1s;
-  box-shadow: 0 0 800px 120px #182855; /* Keep the same box-shadow */
+  box-shadow: 0 0 1000px 120px #0e1c42; /* Keep the same box-shadow */
   opacity: 1; /* Optionally adjust opacity for a more subtle effect */
 }
 
