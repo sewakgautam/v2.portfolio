@@ -1,0 +1,31 @@
+#root {
+  margin: 0 auto;
+}
+
+.container {
+  height: 100vh;
+  margin: 20px;
+  display: flex;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.upperLeftPanel .title{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.upperLeftPanel .designation{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.upperLeftPanel .subtitle{
+  font-size: 20px;
+  font-weight: 300;
+}
