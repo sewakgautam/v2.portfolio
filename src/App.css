@@ -2,30 +2,61 @@
   margin: 0 auto;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .container {
-  height: 100vh;
+  height: 100%;
   margin: 20px;
   display: flex;
 }
 
+.glow {
+  position: fixed;
+ 
+  border-radius: 50%; /* Make it circular */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: top 0.1s, left 0.1s;
+  box-shadow: 0 0 800px 120px #182855; /* Keep the same box-shadow */
+  opacity: 1; /* Optionally adjust opacity for a more subtle effect */
+}
+
 .leftPanel {
+  flex: 0 0 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.rightPanel {
+  flex: 1;
+  margin-left: 50%;
+  overflow-y: auto;
+  height: 100vh;
+
+  padding: 20px;
 }
 
 
-.upperLeftPanel .title{
+.upperLeftPanel .title {
   font-size: 50px;
   font-weight: bold;
 }
 
-.upperLeftPanel .designation{
+.upperLeftPanel .designation {
   font-size: 30px;
   font-weight: bold;
 }
 
-.upperLeftPanel .subtitle{
+.upperLeftPanel .subtitle {
   font-size: 20px;
   font-weight: 300;
 }
