@@ -7,56 +7,105 @@ body {
   padding: 0;
   height: 100%;
 }
-
 .container {
-  height: 100%;
-  margin: 20px;
   display: flex;
-}
-
-.glow {
-  position: fixed;
-
-  border-radius: 50%; /* Make it circular */
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: top 0.1s, left 0.1s;
-  box-shadow: 0 0 1000px 120px #0e1c42; /* Keep the same box-shadow */
-  opacity: 1; /* Optionally adjust opacity for a more subtle effect */
-}
-
-.leftPanel {
-  flex: 0 0 50%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.rightPanel {
-  flex: 1;
-  margin-left: 50%;
-  overflow-y: auto;
+  background-color: #111; /* Match the background color */
+  color: white;
   height: 100vh;
-
-  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  padding: 0 10%; /* Adjust padding for more centered content */
 }
 
+.content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
-.upperLeftPanel .title {
-  font-size: 50px;
+.text-overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%; /* Adjusted for better centering */
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0.1;
+  pointer-events: none;
+  text-align: center;
+}
+
+.background-text {
+  font-size: 260px; /* Larger size to match the design */
   font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 3px white; /* Text outline */
+  opacity: 0;
+  animation: fadeInOut 5s ease-in-out infinite;
 }
 
-.upperLeftPanel .designation {
-  font-size: 30px;
-  font-weight: bold;
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.introContent{
+  z-index:1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10%; */
 }
 
-.upperLeftPanel .subtitle {
-  font-size: 20px;
-  font-weight: 300;
+.intro {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+
+
+.description {
+  z-index: 2;
+  max-width: 600px;
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+.swk {
+  filter: brightness(60%);
+  opacity: 0;
+}
+
+.flirt{
+  text-align: center;
+  width: 50%;
 }
