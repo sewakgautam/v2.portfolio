@@ -5,6 +5,8 @@ import melogo from "./assets/meSewak.png";
 function App() {
   const [textIndex, setTextIndex] = useState(0);
   const textArray = [
+    "Sewak",
+    "gautam",
     "Node.Js",
     "React",
     "Python",
@@ -14,6 +16,9 @@ function App() {
     "Html",
     "Css",
     "ant.d",
+    "Sql",
+    "AWS",
+    "AZURE",
   ];
 
   useEffect(() => {
