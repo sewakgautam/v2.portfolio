@@ -10,7 +10,7 @@ function App() {
     "Node.Js",
     "React",
     "Python",
-    "Javascript",
+    "<.JS/>",
     "Figma",
     "Matlab",
     "Html",
