@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #111; /* Match the background color */
+  /* background-color: #111; Match the background color */
   color: white;
   height: 100vh;
   font-family: 'Arial', sans-serif;
